@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CocoaLumberjack (3.7.0):
+    - CocoaLumberjack/Core (= 3.7.0)
+  - CocoaLumberjack/Core (3.7.0)
+  - Cosmos (23.0.0)
+  - Eureka (5.3.2)
+  - Kingfisher (6.0.1)
+  - MagicalRecord/CocoaLumberjack (2.4.0):
+    - CocoaLumberjack (~> 3.0)
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.4.0)
+  - SCLAlertView (0.8)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Cosmos (~> 23.0)
+  - Eureka
+  - Kingfisher (~> 6.0)
+  - MagicalRecord/CocoaLumberjack (from `https://github.com/magicalpanda/MagicalRecord`)
+  - SCLAlertView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - Cosmos
+    - Eureka
+    - Kingfisher
+    - SCLAlertView
+
+EXTERNAL SOURCES:
+  MagicalRecord:
+    :git: https://github.com/magicalpanda/MagicalRecord
+
+CHECKOUT OPTIONS:
+  MagicalRecord:
+    :commit: 6031f608b79c1d6802007aaed6efd100e11f59ba
+    :git: https://github.com/magicalpanda/MagicalRecord
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  Eureka: 1c2b8b5892bfb0e972d0fe05f8c09fd89f8625ec
+  Kingfisher: adde87a4f74f6a3845395769354efff593581740
+  MagicalRecord: 1f22a766156474d9f46a9b1e1ce59ca9e37830fc
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+
+PODFILE CHECKSUM: 481fa07bb15c8b8657876b41779811e7cb0761bd
+
+COCOAPODS: 1.9.1

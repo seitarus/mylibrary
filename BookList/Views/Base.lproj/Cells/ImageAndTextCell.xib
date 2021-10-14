@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="sMr-TD-BSz" customClass="ImageAndTextCell" customModule="Biblioteca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sMr-TD-BSz" id="5LI-gZ-vq3">
+                <rect key="frame" x="0.0" y="0.0" width="466" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Wz-rK-fCU">
+                        <rect key="frame" x="15" y="12" width="37.5" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0Wz-rK-fCU" secondAttribute="height" multiplier="2:3" id="g41-OJ-vSu"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" text="Titulo del libro" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="1g2-bz-cCO">
+                        <rect key="frame" x="166.5" y="16" width="279.5" height="48"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="sMr-TD-BSz" id="dBv-gn-zV0"/>
+                        </connections>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Wz-rK-fCU" firstAttribute="height" secondItem="5LI-gZ-vq3" secondAttribute="height" multiplier="0.7" id="74X-RV-dqB"/>
+                    <constraint firstItem="0Wz-rK-fCU" firstAttribute="centerY" secondItem="5LI-gZ-vq3" secondAttribute="centerY" id="Keu-oF-n7K"/>
+                    <constraint firstItem="1g2-bz-cCO" firstAttribute="width" secondItem="5LI-gZ-vq3" secondAttribute="width" multiplier="0.6" id="LsX-8V-CBW"/>
+                    <constraint firstItem="0Wz-rK-fCU" firstAttribute="leading" secondItem="5LI-gZ-vq3" secondAttribute="leading" constant="15" id="Od1-72-vTA"/>
+                    <constraint firstAttribute="trailing" secondItem="1g2-bz-cCO" secondAttribute="trailing" constant="20" id="SSM-CC-u6o"/>
+                    <constraint firstItem="1g2-bz-cCO" firstAttribute="centerY" secondItem="5LI-gZ-vq3" secondAttribute="centerY" id="UKi-3H-gMV"/>
+                    <constraint firstItem="1g2-bz-cCO" firstAttribute="height" secondItem="5LI-gZ-vq3" secondAttribute="height" multiplier="0.6" id="jaV-W8-a9R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="0Wz-rK-fCU" id="yLf-Bi-oDF"/>
+                <outlet property="textview" destination="1g2-bz-cCO" id="Isg-qf-FyM"/>
+            </connections>
+            <point key="canvasLocation" x="-273.60000000000002" y="-252.32383808095955"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
